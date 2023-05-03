@@ -56,7 +56,7 @@ export default {
 
 <template>
     <div class="mt-4" v-if="checkRole()==2">
-    <h5 class="text-center">Đăng ký học phần</h5>
+    <h5 class="text-center">Đăng ký ca làm</h5>
     <table class="table mt-4 table-striped">
         <thead class="table-dark">
         <tr>
