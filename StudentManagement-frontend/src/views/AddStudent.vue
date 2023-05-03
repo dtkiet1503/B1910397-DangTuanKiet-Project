@@ -32,7 +32,7 @@ export default {
             try {
                 this.student.regClass=[];
                 await studentService.create(this.student);
-                alert("Thêm sinh viên thành công.")
+                alert("Thêm nhân viên thành công.")
             } catch (error) {
                 console.log(error);
             }

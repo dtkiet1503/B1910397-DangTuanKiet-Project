@@ -53,14 +53,14 @@ export default {
 
 <template>
     <div class="mt-4" v-if="checkRole()==3">
-    <h5 class="text-center">Nhập điểm</h5>
+    <h5 class="text-center">Nhập Lương</h5>
     <table class="table mt-4 table-striped">
         <thead class="table-dark">
         <tr>
         <th scope="col">STT</th>
         <th scope="col">Họ tên</th>
         <th scope="col">Ngày sinh</th>
-        <th scope="col" class="pl-4">Điểm</th>
+        <th scope="col" class="pl-4">Lương/1h</th>
         </tr>
         </thead>
         <tbody>

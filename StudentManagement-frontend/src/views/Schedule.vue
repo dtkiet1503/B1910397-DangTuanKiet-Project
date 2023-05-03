@@ -19,7 +19,7 @@ export default {
         },
 
         async disenrollClass(item, index){
-            if(confirm("Bạn thật sự muốn rút học phần này")){
+            if(confirm("Bạn thật sự muốn rút ca làm này")){
                 var id = localStorage.getItem('id');
                 var account = await accountsService.get(id)
                 var student = await studentsService.get(account.user.insertedId);
@@ -35,7 +35,7 @@ export default {
                 student.regClass.splice(disenrollIndex,1);
                 await studentsService.update(student._id, {'regClass':student.regClass})
                 this.classList.splice(index, 1);
-                alert('Rút học phần thành công');
+                alert('Rút ca làm thành công');
             }
         },
 

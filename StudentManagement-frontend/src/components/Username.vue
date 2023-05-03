@@ -20,15 +20,15 @@ export default {
 
             var account = await accountsService.get(id);
             this.role = account.role;
-            if(account.role=='student'){
+            if(account.role=='Nhân Viên'){
                 var user = await studentsService.get(account.user.insertedId)
-                this.username = user.name+' - ';
+                this.username = user.name+' Nhân Viên ';
             }
-            else if(account.role=='professor'){
+            else if(account.role=='Quản Lí'){
                 var user = await professorsService.get(account.user.insertedId)
                 this.username = user.name+' - ';
             }
-            else if(account.role=='admin'){
+            else if(account.role=='Quản Trị Viên'){
                 this.username = 'Admin - ';
             }
         },
@@ -41,6 +41,5 @@ export default {
 </script>
 
 <template>
-<h6>{{this.username}} {{this.role}}</h6>
 </template>
 

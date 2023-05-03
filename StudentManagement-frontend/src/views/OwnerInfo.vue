@@ -21,9 +21,9 @@ export default {
 <template>
     <div v-if="checkRole()!=0" class="alert alert-primary" role="alert">
         <span>Bạn đã đăng nhập với vai trò </span>
-        <span v-if="checkRole()==1">Admin</span>
-        <span v-if="checkRole()==2">Sinh viên</span>
-        <span v-if="checkRole()==3">Giảng viên</span>
+        <span v-if="checkRole()==1">Quản Trị Viên</span>
+        <span v-if="checkRole()==2">Nhân Viên</span>
+        <span v-if="checkRole()==3">Quản Lý</span>
     </div>
 
     <div v-if="checkRole()==0" class="alert alert-danger" role="alert">

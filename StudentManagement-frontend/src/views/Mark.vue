@@ -34,7 +34,7 @@ export default {
 
 <template>
     <div class="mt-4" v-if="checkRole()==2">
-    <h5 class="text-center">Kết quả học tập</h5>
+    <h5 class="text-center">Chi Tiết Làm Việc</h5>
     <table class="table mt-4 table-striped">
         <thead class="table-dark">
         <tr>
@@ -43,9 +43,9 @@ export default {
         <th scope="col">Mã học phần</th>
         <th scope="col">Thứ</th>
         <th scope="col">Phòng</th>
-        <th scope="col">Tiết</th>
-        <th scope="col" class="text-center">Số tiết</th>
-        <th scope="col">Điểm</th>
+        <th scope="col">Chi Tiết</th>
+        <th scope="col" class="text-center">Giờ Làm</th>
+        <th scope="col">Lương</th>
         </tr>
         </thead>
         <tbody>
